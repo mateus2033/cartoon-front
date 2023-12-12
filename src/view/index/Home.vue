@@ -1,5 +1,5 @@
 <template>
-
+<v-app> 
     <div>
         <Header></Header>     
     </div>
@@ -11,7 +11,7 @@
     <div>
         <Footer></Footer>
     </div>
-    
+</v-app> 
 </template>
 
 <script>
