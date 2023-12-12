@@ -26,7 +26,16 @@
 </template>
 
 <script>
+
+    import content from '@/services/content';
+
     export default {
-        name: "Content"
+        name: "Content",
+
+        mounted() {
+            content.list().then((response) => {
+                 this.value = response.content.value
+            })
+        },
     }
 </script>
