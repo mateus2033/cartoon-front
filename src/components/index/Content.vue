@@ -1,40 +1,17 @@
 <template>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
-    <h1>Content</h1>
+    <v-app>
+        <ProductBasicCard />
+    </v-app>
 </template>
 
 <script>
 
-    import content from '@/services/content';
+import ProductBasicCard from '../../components/product/ProductBasicCard'
 
-    export default {
-        name: "Content",
-
-        mounted() {
-            content.list().then((response) => {
-                 this.value = response.content.value
-            })
-        },
-    }
+export default {
+    components: {
+        ProductBasicCard
+    },
+    name: "Content"
+}
 </script>

@@ -1,7 +1,13 @@
 import { http } from "./config";
 
 export default {
-    list: () => {
-        return http.get('/cartoon/index')
-    },
+    list(data) {
+        return http.get('/cartoon/index/',{       
+            params: {
+                page: data.page,
+                perpage: data.perpage,
+                paginate: data.paginate
+            }
+        });
+    }
 }
