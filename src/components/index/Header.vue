@@ -14,7 +14,7 @@
             <v-btn 
                  prepend-icon="mdi-account-circle" 
                  variant="text" 
-                 @click="Register()"> Entrar 
+                 @click="Register()"> Cadastrar 
             </v-btn>
         </v-toolbar>
 

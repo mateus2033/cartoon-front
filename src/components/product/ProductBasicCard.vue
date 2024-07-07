@@ -34,7 +34,7 @@
         </v-col>
     </v-row>
     <div>
-        <v-pagination v-model="pagination.page" :length="totalPages"  @update:model-value="fetch" />
+        <v-pagination v-model="pagination.page" :length="totalPages"  :total-visible="5" @update:model-value="fetch" />
     </div>
 </template>
 
