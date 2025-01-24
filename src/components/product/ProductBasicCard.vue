@@ -34,7 +34,7 @@
         </v-col>
     </v-row>
     <div>
-        <v-pagination v-model="pagination.page" :length="totalPages"  @update:model-value="fetch" />
+        <v-pagination v-model="pagination.page" :length="totalPages" :total-visible="pagination.visible"  @update:model-value="fetch" />
     </div>
 </template>
 
@@ -53,8 +53,9 @@ export default {
             vetor: [],
             pagination:{
                 page: 1, 
-                perpage: 24,
-                paginate: true
+                perpage: 18,
+                paginate: true,
+                totalVisible: 10
             }
         }
     },
